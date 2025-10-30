@@ -19,10 +19,11 @@
 </head>
 <body>
 
+<!-- HEADER -->
 <header>
   <div class="nav container">
     <div class="brand">Irene Spa</div>
-    <nav>
+    <nav class="desktop-nav">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -32,9 +33,22 @@
         <li><a href="#contact" class="cta">Book Now</a></li>
       </ul>
     </nav>
-    <div class="menu-toggle" id="menuToggle">Menu Icon</div>
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
   </div>
-  <div id="mobileNav" class="mobile-nav" style="display:none;"></div>
+
+  <!-- MOBILE MENU – SLIDES IN FROM TOP -->
+  <div id="mobileNav" class="mobile-nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact" class="cta">Book Now</a></li>
+    </ul>
+  </div>
 </header>
 
 <!-- HERO -->
@@ -44,11 +58,7 @@
 
       <!-- SLIDE 1 -->
       <div class="swiper-slide">
-        <img 
-          class="hero-image" 
-          src="img/beautiful-manicure-and-pedicure-.jpg" 
-          alt="Luxury manicure at Irene Spa"
-          loading="lazy">
+        <img class="hero-image" src="img/beautiful-manicure-and-pedicure-.jpg" alt="Luxury manicure at Irene Spa" loading="lazy">
         <div class="hero-content">
           <div class="hero-inner">
             <div class="kicker">Luxury & Wellness</div>
@@ -61,11 +71,7 @@
 
       <!-- SLIDE 2 -->
       <div class="swiper-slide">
-        <img 
-          class="hero-image" 
-          src="img/fashion-nail-art-samples-in-female-hands.jpg" 
-          alt="Signature nail art"
-          loading="lazy">
+        <img class="hero-image" src="img/fashion-nail-art-samples-in-female-hands.jpg" alt="Signature nail art" loading="lazy">
         <div class="hero-content">
           <div class="hero-inner">
             <div class="kicker">Signature Care</div>
@@ -78,11 +84,7 @@
 
       <!-- SLIDE 3 -->
       <div class="swiper-slide">
-        <img 
-          class="hero-image" 
-          src="img/fingernail-care.jpg" 
-          alt="Nail care perfection"
-          loading="lazy">
+        <img class="hero-image" src="img/fingernail-care.jpg" alt="Nail care perfection" loading="lazy">
         <div class="hero-content">
           <div class="hero-inner">
             <div class="kicker">Serene Sanctuary</div>
@@ -121,10 +123,7 @@
     </div>
 
     <div class="about-image">
-      <img 
-        src="img/shades-of-pink-nail-polish.jpg" 
-        alt="Irene Spa interior – relaxing treatment room"
-        loading="lazy">
+      <img src="img/shades-of-pink-nail-polish.jpg" alt="Irene Spa interior – relaxing treatment room" loading="lazy">
     </div>
   </div>
 </section>
@@ -214,11 +213,7 @@
 <!-- FULL-WIDTH IMAGE SECTION -->
 <section class="image-break section">
   <div class="image-wrapper">
-    <img 
-      src="img/make-up.jpg" 
-      alt="Luxurious spa interior at Irene Spa" 
-      class="break-image"
-      loading="lazy">
+    <img src="img/make-up.jpg" alt="Luxurious spa interior at Irene Spa" class="break-image" loading="lazy">
     <div class="image-overlay">
       <div class="container">
         <div class="image-text">
@@ -248,59 +243,61 @@
       <a href="#contact" class="btn primary">Book Your Visit</a>
     </div>
     <div class="why-image">
-      <img 
-        src="img/beautiful-manicure-and-pedicure-.jpg" 
-        alt="Luxury nail treatment at Irene Spa"
-        loading="lazy">
+      <img src="img/beautiful-manicure-and-pedicure-.jpg" alt="Luxury nail treatment at Irene Spa" loading="lazy">
     </div>
   </div>
 </section>
 
 <!-- FEATURED PACKAGE -->
-<div class="packages-grid">
-  <div class="package-card">
-    <h3>Lite</h3>
-    <p class="package-subtitle">Basic Package Service</p>
-    <div class="price">R<span class="big">99</span><sup>99</sup><span class="per">/session</span></div>
-    <ul class="features">
-      <li><i class="fas fa-check"></i> Manicures</li>
-      <li><i class="fas fa-check"></i> Pedicures</li>
-      <li><i class="fas fa-check"></i> Color Polish Hands</li>
-      <li><i class="fas fa-check"></i> Acrylic Fill</li>
-      <li><i class="fas fa-check"></i> Gel Fill</li>
-    </ul>
-    <a href="#contact" class="btn primary">Book Now</a>
-  </div>
+<section id="packages" class="packages section">
+  <div class="container">
+    <h2 class="section-title">Featured Packages</h2>
+    <p class="section-subtitle muted">Let us help keep your nails beautiful.</p>
 
-  <div class="package-card popular">
-    <div class="popular-badge">Popular</div>
-    <h3>Premium</h3>
-    <p class="package-subtitle">Premium Package Service</p>
-    <div class="price">R<span class="big">199</span><sup>99</sup><span class="per">/session</span></div>
-    <ul class="features">
-      <li><i class="fas fa-check"></i> Manicures</li>
-      <li><i class="fas fa-check"></i> Pedicures</li>
-      <li><i class="fas fa-check"></i> Color Polish Hands</li>
-      <li><i class="fas fa-check"></i> Acrylic Fill</li>
-      <li><i class="fas fa-check"></i> Gel Fill</li>
-    </ul>
-    <a href="#contact" class="btn primary">Book Now</a>
-  </div>
+    <div class="packages-grid">
+      <div class="package-card">
+        <h3>Lite</h3>
+        <p class="package-subtitle">Basic Package Service</p>
+        <div class="price">R<span class="big">99</span><sup>99</sup><span class="per">/session</span></div>
+        <ul class="features">
+          <li><i class="fas fa-check"></i> Manicures</li>
+          <li><i class="fas fa-check"></i> Pedicures</li>
+          <li><i class="fas fa-check"></i> Color Polish Hands</li>
+          <li><i class="fas fa-check"></i> Acrylic Fill</li>
+          <li><i class="fas fa-check"></i> Gel Fill</li>
+        </ul>
+        <a href="#contact" class="btn primary">Book Now</a>
+      </div>
 
-  <div class="package-card">
-    <h3>Luxury</h3>
-    <p class="package-subtitle">Luxury Package Service</p>
-    <div class="price">R<span class="big">399</span><sup>99</sup><span class="per">/session</span></div>
-    <ul class="features">
-      <li><i class="fas fa-check"></i> Manicures</li>
-      <li><i class="fas fa-check"></i> Pedicures</li>
-      <li><i class="fas fa-check"></i> Color Polish Hands</li>
-      <li><i class="fas fa-check"></i> Acrylic Fill</li>
-      <li><i class="fas fa-check"></i> Gel Fill</li>
-    </ul>
-    <a href="#contact" class="btn primary">Book Now</a>
-  </div>
-</div>
+      <div class="package-card popular">
+        <div class="popular-badge">Popular</div>
+        <h3>Premium</h3>
+        <p class="package-subtitle">Premium Package Service</p>
+        <div class="price">R<span class="big">199</span><sup>99</sup><span class="per">/session</span></div>
+        <ul class="features">
+          <li><i class="fas fa-check"></i> Manicures</li>
+          <li><i class="fas fa-check"></i> Pedicures</li>
+          <li><i class="fas fa-check"></i> Color Polish Hands</li>
+          <li><i class="fas fa-check"></i> Acrylic Fill</li>
+          <li><i class="fas fa-check"></i> Gel Fill</li>
+        </ul>
+        <a href="#contact" class="btn primary">Book Now</a>
+      </div>
+
+      <div class="package-card">
+        <h3>Luxury</h3>
+        <p class="package-subtitle">Luxury Package Service</p>
+        <div class="price">R<span class="big">399</span><sup>99</sup><span class="per">/session</span></div>
+        <ul class="features">
+          <li><i class="fas fa-check"></i> Manicures</li>
+          <li><i class="fas fa-check"></i> Pedicures</li>
+          <li><i class="fas fa-check"></i> Color Polish Hands</li>
+          <li><i class="fas fa-check"></i> Acrylic Fill</li>
+          <li><i class="fas fa-check"></i> Gel Fill</li>
+        </ul>
+        <a href="#contact" class="btn primary">Book Now</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -342,22 +339,23 @@
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-container">
     <div class="footer-col">
       <div class="footer-logo">Irene Spa</div>
       <p class="footer-text">Your sanctuary for luxury nail care and wellness. Experience serenity, elegance, and flawless beauty.</p>
       <div class="social-links">
-  <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-  <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-  <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-</div>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
     </div>
     <div class="footer-col">
       <h4>Quick Links</h4>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#packages">Packages</a></li>
         <li><a href="#contact">Book Now</a></li>
@@ -395,20 +393,22 @@
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="scripts.js"></script>
 
-<!-- WhatsApp Floating Button -->
-<div class="whatsapp-float">
-  <a href="https://wa.me/27638154354?text=Hi%2C%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Irene%20Spa.%20Can%20you%20help%3F" 
-     target="_blank" 
-     rel="noopener noreferrer"
-     aria-label="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-</div>
-
-<!-- SCROLL-TRIGGERED FADE-IN FOR .about-cta -->
+<!-- MOBILE MENU TOGGLE + SCROLL FADE-IN -->
 <script>
+  // Mobile Menu Toggle
+  document.getElementById('menuToggle').addEventListener('click', function() {
+    document.getElementById('mobileNav').classList.toggle('active');
+  });
+
+  // Close menu when link is clicked
+  document.querySelectorAll('.mobile-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobileNav').classList.remove('active');
+    });
+  });
+
+  // About CTA Fade-in on Scroll
   document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -424,6 +424,16 @@
     });
   });
 </script>
+
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-float">
+  <a href="https://wa.me/27638154354?text=Hi%2C%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Irene%20Spa.%20Can%20you%20help%3F" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
 
 </body>
 </html>
