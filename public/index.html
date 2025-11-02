@@ -23,6 +23,8 @@
 <header>
   <div class="nav container">
     <div class="brand">Irene Spa</div>
+
+    <!-- DESKTOP NAV -->
     <nav class="desktop-nav">
       <ul>
         <li><a href="#home">Home</a></li>
@@ -31,14 +33,26 @@
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact" class="cta">Book Now</a></li>
+        <!-- CURRENCY SELECTOR MOVED HERE -->
+        <li class="currency-nav-item">
+          <div class="currency-selector">
+            <select id="currencySelect">
+              <option value="ZAR">R (ZAR)</option>
+              <option value="USD">$ (USD)</option>
+              <option value="EUR">EUR (EUR)</option>
+              <option value="GBP">GBP (GBP)</option>
+            </select>
+          </div>
+        </li>
       </ul>
     </nav>
+
     <div class="menu-toggle" id="menuToggle">
       <i class="fas fa-bars"></i>
     </div>
   </div>
 
-  <!-- MOBILE MENU – SLIDES IN FROM TOP -->
+  <!-- MOBILE MENU -->
   <div id="mobileNav" class="mobile-nav">
     <ul>
       <li><a href="#home">Home</a></li>
@@ -47,6 +61,17 @@
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#contact" class="cta">Book Now</a></li>
+      <!-- CURRENCY BELOW BOOK NOW ON MOBILE -->
+      <li class="mobile-currency-item">
+        <div class="currency-selector">
+          <select id="currencySelectMobile">
+            <option value="ZAR">R (ZAR)</option>
+            <option value="USD">$ (USD)</option>
+            <option value="EUR">EUR (EUR)</option>
+            <option value="GBP">GBP (GBP)</option>
+          </select>
+        </div>
+      </li>
     </ul>
   </div>
 </header>
@@ -55,7 +80,6 @@
 <section id="home" class="hero">
   <div class="swiper hero-swiper">
     <div class="swiper-wrapper">
-
       <!-- SLIDE 1 -->
       <div class="swiper-slide">
         <img class="hero-image" src="img/beautiful-manicure-and-pedicure-.jpg" alt="Luxury manicure at Irene Spa" loading="lazy">
@@ -68,7 +92,6 @@
           </div>
         </div>
       </div>
-
       <!-- SLIDE 2 -->
       <div class="swiper-slide">
         <img class="hero-image" src="img/fashion-nail-art-samples-in-female-hands.jpg" alt="Signature nail art" loading="lazy">
@@ -81,7 +104,6 @@
           </div>
         </div>
       </div>
-
       <!-- SLIDE 3 -->
       <div class="swiper-slide">
         <img class="hero-image" src="img/fingernail-care.jpg" alt="Nail care perfection" loading="lazy">
@@ -94,7 +116,6 @@
           </div>
         </div>
       </div>
-
     </div>
     <div class="swiper-pagination"></div>
   </div>
@@ -106,22 +127,12 @@
   <div class="container about-container">
     <div class="about-content">
       <h2 class="section-title">About Us</h2>
-      <p>
-        Welcome to Irene Spa, a tranquil haven where beauty meets relaxation. 
-        Our skilled therapists provide bespoke treatments designed to rejuvenate 
-        your mind, body, and soul. We believe in using only the finest products 
-        and techniques to ensure an unforgettable spa experience.
-      </p>
-      <p>
-        Whether you’re here for a massage, facial, or full-day retreat, 
-        our mission is to help you unwind and glow from within. 
-        Experience serenity, elegance, and true luxury at Irene Spa.
-      </p>
+      <p>Welcome to Irene Spa, a tranquil haven where beauty meets relaxation. Our skilled therapists provide bespoke treatments designed to rejuvenate your mind, body, and soul. We believe in using only the finest products and techniques to ensure an unforgettable spa experience.</p>
+      <p>Whether you’re here for a massage, facial, or full-day retreat, our mission is to help you unwind and glow from within. Experience serenity, elegance, and true luxury at Irene Spa.</p>
       <div class="about-cta">
         <a href="#services" class="btn primary">Explore Our Services</a>
       </div>
     </div>
-
     <div class="about-image">
       <img src="img/shades-of-pink-nail-polish.jpg" alt="Irene Spa interior – relaxing treatment room" loading="lazy">
     </div>
@@ -146,7 +157,6 @@
           <a href="#contact" class="btn primary">Book Now</a>
         </div>
       </div>
-
       <!-- CARD 2 -->
       <div class="service-card">
         <div class="service-img">
@@ -158,7 +168,6 @@
           <a href="#contact" class="btn primary">Book Now</a>
         </div>
       </div>
-
       <!-- CARD 3 -->
       <div class="service-card">
         <div class="service-img">
@@ -170,7 +179,6 @@
           <a href="#contact" class="btn primary">Book Now</a>
         </div>
       </div>
-
       <!-- CARD 4 -->
       <div class="service-card">
         <div class="service-img">
@@ -182,7 +190,6 @@
           <a href="#contact" class="btn primary">Book Now</a>
         </div>
       </div>
-
       <!-- CARD 5 -->
       <div class="service-card">
         <div class="service-img">
@@ -194,7 +201,6 @@
           <a href="#contact" class="btn primary">Book Now</a>
         </div>
       </div>
-
       <!-- CARD 6 -->
       <div class="service-card">
         <div class="service-img">
@@ -206,6 +212,44 @@
           <a href="#contact" class="btn primary">Book Now</a>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section id="gallery" class="gallery section">
+  <div class="container">
+    <h2 class="section-title">Our Gallery</h2>
+    <p class="section-subtitle muted text-center">Moments of luxury, care, and beauty at Irene Spa</p>
+
+    <div class="gallery-grid">
+      <a href="img/gallery/001.jpg" data-lightbox="spa" data-title="Luxury Manicure">
+        <img src="img/gallery/001.jpg" alt="Luxury manicure" loading="lazy">
+      </a>
+      <a href="img/gallery/002.jpg" data-lightbox="spa" data-title="Nail Art Design">
+        <img src="img/gallery/002.jpg" alt="Nail art" loading="lazy">
+      </a>
+      <a href="img/gallery/003.jpg" data-lightbox="spa" data-title="Nail Care">
+        <img src="img/gallery/003.jpg" alt="Nail care" loading="lazy">
+      </a>
+      <a href="img/gallery/004.jpg" data-lightbox="spa" data-title="Professional Manicure">
+        <img src="img/gallery/004.jpg" alt="Manicure" loading="lazy">
+      </a>
+      <a href="img/gallery/005.jpg" data-lightbox="spa" data-title="Pedicure Bliss">
+        <img src="img/gallery/005.jpg" alt="Pedicure" loading="lazy">
+      </a>
+      <a href="img/gallery/006.jpg" data-lightbox="spa" data-title="Creative Nail Art">
+        <img src="img/gallery/006.jpg" alt="Nail art samples" loading="lazy">
+      </a>
+      <a href="img/gallery/007.jpg" data-lightbox="spa" data-title="Creative Nail Art">
+        <img src="img/gallery/007.jpg" alt="Nail art samples" loading="lazy">
+      </a>
+      <a href="img/gallery/008.jpg" data-lightbox="spa" data-title="Creative Nail Art">
+        <img src="img/gallery/008.jpg" alt="Nail art samples" loading="lazy">
+      </a>
+      <a href="img/gallery/009.jpg" data-lightbox="spa" data-title="Creative Nail Art">
+        <img src="img/gallery/009.jpg" alt="Nail art samples" loading="lazy">
+      </a>
     </div>
   </div>
 </section>
@@ -230,9 +274,7 @@
   <div class="container why-container">
     <div class="why-content">
       <h2 class="section-title">Why Choose Us</h2>
-      <p class="section-subtitle">
-        We combine artistry, luxury, and care to deliver an unmatched nail and beauty experience.
-      </p>
+      <p class="section-subtitle">We combine artistry, luxury, and care to deliver an unmatched nail and beauty experience.</p>
       <ul class="why-features">
         <li><i class="fas fa-check-circle icon"></i><span>Premium, cruelty-free products from top global brands</span></li>
         <li><i class="fas fa-check-circle icon"></i><span>Certified therapists with 5+ years of specialized training</span></li>
@@ -248,17 +290,23 @@
   </div>
 </section>
 
-<!-- FEATURED PACKAGE -->
+<!-- FEATURED PACKAGES -->
 <section id="packages" class="packages section">
   <div class="container">
     <h2 class="section-title">Featured Packages</h2>
     <p class="section-subtitle muted">Let us help keep your nails beautiful.</p>
 
     <div class="packages-grid">
+      <!-- Lite -->
       <div class="package-card">
         <h3>Lite</h3>
         <p class="package-subtitle">Basic Package Service</p>
-        <div class="price">R<span class="big">99</span><sup>99</sup><span class="per">/session</span></div>
+        <div class="price">
+          <span class="currency-symbol">R</span>
+          <span class="big" data-price="99.99">99</span>
+          <sup>99</sup>
+          <span class="per">/session</span>
+        </div>
         <ul class="features">
           <li><i class="fas fa-check"></i> Manicures</li>
           <li><i class="fas fa-check"></i> Pedicures</li>
@@ -269,11 +317,17 @@
         <a href="#contact" class="btn primary">Book Now</a>
       </div>
 
+      <!-- Premium -->
       <div class="package-card popular">
         <div class="popular-badge">Popular</div>
         <h3>Premium</h3>
         <p class="package-subtitle">Premium Package Service</p>
-        <div class="price">R<span class="big">199</span><sup>99</sup><span class="per">/session</span></div>
+        <div class="price">
+          <span class="currency-symbol">R</span>
+          <span class="big" data-price="199.99">199</span>
+          <sup>99</sup>
+          <span class="per">/session</span>
+        </div>
         <ul class="features">
           <li><i class="fas fa-check"></i> Manicures</li>
           <li><i class="fas fa-check"></i> Pedicures</li>
@@ -284,10 +338,16 @@
         <a href="#contact" class="btn primary">Book Now</a>
       </div>
 
+      <!-- Luxury -->
       <div class="package-card">
         <h3>Luxury</h3>
         <p class="package-subtitle">Luxury Package Service</p>
-        <div class="price">R<span class="big">399</span><sup>99</sup><span class="per">/session</span></div>
+        <div class="price">
+          <span class="currency-symbol">R</span>
+          <span class="big" data-price="399.99">399</span>
+          <sup>99</sup>
+          <span class="per">/session</span>
+        </div>
         <ul class="features">
           <li><i class="fas fa-check"></i> Manicures</li>
           <li><i class="fas fa-check"></i> Pedicures</li>
@@ -317,23 +377,45 @@
   <div class="container">
     <div class="contact-info">
       <h2 class="section-title">Get in Touch</h2>
-      <div class="contact-item">Address<br>154 Cradock Ave<br>Lyttelton Manor, Centurion, 0157</div>
-      <div class="contact-item">Phone<br><a href="tel:+27638154354">+27638154354</a></div>
-      <div class="contact-item">Email<br><a href="mailto:info@irenespa.com">info@irenespa.com</a></div>
-      <div class="contact-item">Hours<br>Mon–Sat: 9 AM – 8 PM<br>Sunday: 10 AM – 6 PM</div>
+      <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Address<br>154 Cradock Ave<br>Lyttelton Manor, Centurion, 0157</div>
+      <div class="contact-item"><i class="fas fa-phone"></i> Phone<br><a href="tel:+27638154354">+27 638 154 354</a></div>
+      <div class="contact-item"><i class="fas fa-envelope"></i> Email<br><a href="mailto:info@irenespa.com">info@irenespa.com</a></div>
+      <div class="contact-item"><i class="fas fa-clock"></i> Hours<br>Mon–Sat: 9 AM – 8 PM<br>Sunday: 10 AM – 6 PM</div>
     </div>
     <form class="contact-form" id="contactForm">
-      <div class="form-group"><label>Your Name</label><input type="text" name="name" required></div>
-      <div class="form-group"><label>Email Address</label><input type="email" name="email" required></div>
-      <div class="form-group"><label>Service Interested In</label>
-        <select name="service">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input 
+          type="tel" 
+          id="phone" 
+          name="phone" 
+          inputmode="numeric" 
+          pattern="[0-9]+" 
+          placeholder="e.g. 0638154354" 
+          required
+        >
+      </div>
+      <div class="form-group">
+        <label for="service">Service Interested In</label>
+        <select id="service" name="service">
           <option>Signature Facial</option>
           <option>Manicure & Pedicure</option>
           <option>Body Massage</option>
           <option>Other</option>
         </select>
       </div>
-      <div class="form-group"><label>Message</label><textarea name="message" placeholder="Tell us about your needs..."></textarea></div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us about your needs..." rows="4"></textarea>
+      </div>
       <button type="submit" class="btn primary">Send Message</button>
     </form>
   </div>
@@ -374,19 +456,22 @@
     <div class="footer-col">
       <h4>Contact Us</h4>
       <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
         <span>154 Cradock Ave<br>Lyttelton Manor, Centurion, 0157</span>
       </div>
       <div class="contact-item">
+        <i class="fas fa-phone"></i>
         <a href="tel:+27638154354">+27 638 154 354</a>
       </div>
       <div class="contact-item">
+        <i class="fas fa-envelope"></i>
         <a href="mailto:info@irenespa.com">info@irenespa.com</a>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="container">
-      <p>© 2025 <strong>Irene Spa</strong>. All rights reserved. | Designed by www.nhx.co.za</p>
+      <p>© 2025 <strong>Irene Spa</strong>. All rights reserved. | Designed by <a href="https://nhx.co.za" target="_blank">www.nhx.co.za</a></p>
     </div>
   </div>
 </footer>
@@ -394,21 +479,97 @@
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- MOBILE MENU TOGGLE + SCROLL FADE-IN -->
+<!-- ALL SCRIPTS -->
 <script>
-  // Mobile Menu Toggle
+  // === MOBILE MENU ===
   document.getElementById('menuToggle').addEventListener('click', function() {
     document.getElementById('mobileNav').classList.toggle('active');
   });
 
-  // Close menu when link is clicked
   document.querySelectorAll('.mobile-nav a').forEach(link => {
     link.addEventListener('click', () => {
       document.getElementById('mobileNav').classList.remove('active');
     });
   });
 
-  // About CTA Fade-in on Scroll
+  // === SMOOTH SCROLL ===
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', ev => {
+      const href = a.getAttribute('href');
+      if (href !== '#' && href.length > 1) {
+        ev.preventDefault();
+        const target = document.querySelector(href);
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  // === SWIPER ===
+  if (typeof Swiper !== 'undefined') {
+    new Swiper('.hero-swiper', {
+      loop: true,
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      autoplay: { delay: 4000, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      speed: 1000,
+    });
+  }
+
+  // === CONTACT FORM ===
+  const contactForm = document.getElementById('contactForm');
+  contactForm?.addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Thank you! Your booking request has been sent (demo).');
+    e.target.reset();
+  });
+
+  // === PHONE NUMBER: ONLY DIGITS ===
+  const phoneInput = document.getElementById('phone');
+  phoneInput?.addEventListener('input', function(e) {
+    this.value = this.value.replace(/[^0-9]/g, '');
+  });
+
+  // === CURRENCY CONVERTER - SYNC DESKTOP & MOBILE ===
+  const rates = { ZAR: 1, USD: 0.054, EUR: 0.049, GBP: 0.042 };
+  const symbols = { ZAR: 'R', USD: '$', EUR: 'EUR', GBP: 'GBP' };
+
+  const desktopSelect = document.getElementById('currencySelect');
+  const mobileSelect = document.getElementById('currencySelectMobile');
+
+  const saved = localStorage.getItem('spaCurrency') || 'ZAR';
+  desktopSelect.value = saved;
+  if (mobileSelect) mobileSelect.value = saved;
+  convertAll(saved);
+
+  // Sync both selects
+  desktopSelect.addEventListener('change', e => syncCurrency(e.target.value));
+  if (mobileSelect) mobileSelect.addEventListener('change', e => syncCurrency(e.target.value));
+
+  function syncCurrency(cur) {
+    desktopSelect.value = cur;
+    if (mobileSelect) mobileSelect.value = cur;
+    localStorage.setItem('spaCurrency', cur);
+    convertAll(cur);
+  }
+
+  function convertAll(toCur) {
+    const rate = rates[toCur];
+    const sym = symbols[toCur];
+
+    document.querySelectorAll('[data-price]').forEach(el => {
+      const zar = parseFloat(el.dataset.price);
+      const conv = (zar * rate).toFixed(2);
+      const [int, dec] = conv.split('.');
+      el.textContent = int;
+      const sup = el.nextElementSibling;
+      if (sup && sup.tagName === 'SUP') sup.textContent = dec;
+      const symEl = el.parentElement.querySelector('.currency-symbol');
+      if (symEl) symEl.textContent = sym;
+    });
+  }
+
+  // === SCROLL FADE-IN ===
   document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -418,9 +579,40 @@
         }
       });
     }, { threshold: 0.2 });
+    document.querySelectorAll('.about-cta').forEach(el => observer.observe(el));
+  });
 
-    document.querySelectorAll('.about-cta').forEach(el => {
-      observer.observe(el);
+  // === LIGHTBOX GALLERY ===
+  document.addEventListener('DOMContentLoaded', () => {
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML = `
+      <span class="close">×</span>
+      <img src="" alt="">
+      <div class="caption"></div>
+    `;
+    document.body.appendChild(lightbox);
+
+    const lbImg = lightbox.querySelector('img');
+    const lbCaption = lightbox.querySelector('.caption');
+    const lbClose = lightbox.querySelector('.close');
+
+    document.querySelectorAll('[data-lightbox]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        lbImg.src = link.getAttribute('href');
+        lbCaption.textContent = link.getAttribute('data-title') || '';
+        lightbox.classList.add('active');
+      });
+    });
+
+    lbClose.addEventListener('click', () => lightbox.classList.remove('active'));
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) lightbox.classList.remove('active');
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') lightbox.classList.remove('active');
     });
   });
 </script>
@@ -428,9 +620,7 @@
 <!-- WhatsApp Floating Button -->
 <div class="whatsapp-float">
   <a href="https://wa.me/27638154354?text=Hi%2C%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Irene%20Spa.%20Can%20you%20help%3F" 
-     target="_blank" 
-     rel="noopener noreferrer"
-     aria-label="Chat on WhatsApp">
+     target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 </div>
