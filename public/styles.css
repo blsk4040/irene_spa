@@ -1,6 +1,6 @@
 /* ========================================
    MOBILE-FIRST RESPONSIVE STYLES
-   Irene Spa – Fully Responsive
+   iBabeautySpa – Fully Responsive
 ======================================== */
 
 :root {
@@ -78,20 +78,23 @@ header {
   backdrop-filter: blur(6px);
   box-shadow: 0 4px 18px rgba(0,0,0,.06);
 }
+
+/* Mobile & Tablet: Keep nav inside container */
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 1rem 0;
   max-width: var(--container);
   margin: 0 auto;
 }
+
 .brand {
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   color: var(--accent);
   font-weight: 700;
 }
+
 .currency-selector {
   margin-left: 1rem;
 }
@@ -107,6 +110,7 @@ header {
   cursor: pointer;
   font-size: 0.95rem;
 }
+
 .desktop-nav { margin-left: auto; }
 .desktop-nav ul {
   display: flex;
@@ -252,6 +256,54 @@ header {
 
 /* ==== SECTIONS ==== */
 .section { padding: 5rem 0; }
+
+/* ==== SECTION DIVIDER: Gold Line with Centered Diamond ==== */
+.section-divider {
+  position: relative;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--accent), transparent);
+  margin: 0 auto;
+  width: 100px;
+  max-width: 20%;
+}
+
+.section-divider::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  clip-path: polygon(50% 0%, 0% 50%, 50% 100%, 100% 50%);
+  box-shadow: 0 2px 4px rgba(212, 175, 55, 0.3);
+  z-index: 1;
+}
+
+.section-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--accent);
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+/* Mobile: Smaller divider */
+@media (max-width: 768px) {
+  .section-divider {
+    width: 60px;
+    max-width: 30%;
+  }
+  .section-divider::before {
+    width: 8px;
+    height: 8px;
+  }
+}
 
 /* ==== ABOUT ==== */
 .about-container {
@@ -719,11 +771,36 @@ header {
   .why-container { flex-direction: row; }
 }
 
-/* Desktop */
+/* ========================================
+   DESKTOP: FULL-WIDTH NAV TO FAR CORNERS
+======================================== */
 @media (min-width: 992px) {
+  /* Remove container limits from header nav */
+  .nav {
+    max-width: none;
+    margin: 0;
+    padding: 1rem 2rem; /* Add side padding so nav isn't touching screen edge */
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* Logo flush to left */
+  .brand {
+    margin-left: 0;
+  }
+
+  /* Nav flush to right */
+  .desktop-nav {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  /* Grid layouts */
   .services-grid,
   .gallery-grid,
-  .packages-grid { grid-template-columns: repeat(3, 1fr); }
+  .packages-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Hide desktop nav on mobile */

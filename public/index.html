@@ -3,7 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Iba Beauty Spa — Luxury Wellness</title>
+  
+  <!-- ====== SEO & LOCAL OPTIMIZED TITLE & META ====== -->
+  <title>Iba Beauty Spa | Luxury Nail Salon, Manicure & Pedicure in Centurion</title>
+  <meta name="description" content="Experience luxury manicures, pedicures, nail art, gel & acrylics at Iba Beauty Spa in Lyttelton Manor, Centurion. Premium products, expert therapists. Book your appointment today!">
+  <meta name="keywords" content="nail salon centurion, manicure centurion, pedicure lyttelton manor, iba beauty spa, luxury spa centurion, gel nails pretoria, acrylic nails centurion, nail art centurion">
+  <meta name="author" content="Iba Beauty Spa">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.ibabeautyspa.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Iba Beauty Spa | Luxury Nail & Beauty Salon in Centurion">
+  <meta property="og:description" content="Premium manicures, pedicures, nail art & wellness treatments in Lyttelton Manor, Centurion. Book your luxury experience today!">
+  <meta property="og:image" content="https://www.ibabeautyspa.com/img/beautiful-manicure-and-pedicure-.jpg">
+  <meta property="og:url" content="https://www.ibabeautyspa.com">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_ZA">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Iba Beauty Spa | Luxury Nail Salon in Centurion">
+  <meta name="twitter:description" content="Premium nail care & beauty treatments in Centurion. Manicures, pedicures, gel, acrylics & more.">
+  <meta name="twitter:image" content="https://www.ibabeautyspa.com/img/beautiful-manicure-and-pedicure-.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -16,8 +40,76 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- ====== LOCAL BUSINESS SCHEMA (JSON-LD) – GOOGLE LOVES THIS ====== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Iba Beauty Spa",
+    "image": "https://www.ibabeautyspa.com/img/beautiful-manicure-and-pedicure-.jpg",
+    "url": "https://www.ibabeautyspa.com",
+    "telephone": "+27638154354",
+    "priceRange": "R99 - R999",
+    "description": "Luxury nail salon in Centurion offering premium manicures, pedicures, gel & acrylic nails, nail art, lash & brow treatments in a serene, hygienic environment.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "103 Cradock Ave, Lyttelton Manor",
+      "addressLocality": "Centurion",
+      "addressRegion": "Gauteng",
+      "postalCode": "0157",
+      "addressCountry": "ZA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -25.8343,
+      "longitude": 28.2023
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "10:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/ibabeautyspa",
+      "https://www.instagram.com/ibabeautyspa"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+27-63-815-4354",
+      "contactType": "Customer Service",
+      "areaServed": "ZA",
+      "availableLanguage": "English"
+    }
+  }
+  </script>
+
+  <style>
+    /* Hide H1 visually but keep for SEO */
+    .hidden-h1 {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- Hidden H1 for SEO (Google sees this as main heading) -->
+  <h1 class="hidden-h1">Iba Beauty Spa – Luxury Nail Salon & Wellness in Centurion</h1>
 
 <!-- HEADER -->
 <header>
@@ -33,7 +125,8 @@
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact" class="cta">Book Now</a></li>
-        <!-- CURRENCY SELECTOR MOVED HERE -->
+
+        <!-- CURRENCY SELECTOR HERE -->
         <li class="currency-nav-item">
           <div class="currency-selector">
             <select id="currencySelect">
@@ -138,6 +231,7 @@
     </div>
   </div>
 </section>
+<div class="section-divider"></div>
 
 <!-- SERVICES -->
 <section id="services" class="services section">
@@ -215,6 +309,7 @@
     </div>
   </div>
 </section>
+<div class="section-divider"></div>
 
 <!-- GALLERY SECTION -->
 <section id="gallery" class="gallery section">
@@ -253,6 +348,7 @@
     </div>
   </div>
 </section>
+<div class="section-divider"></div>
 
 <!-- FULL-WIDTH IMAGE SECTION -->
 <section class="image-break section">
@@ -268,6 +364,7 @@
     </div>
   </div>
 </section>
+<div class="section-divider"></div>
 
 <!-- WHY CHOOSE US -->
 <section id="why-choose" class="why-choose section">
@@ -289,6 +386,7 @@
     </div>
   </div>
 </section>
+<div class="section-divider"></div>
 
 <!-- FEATURED PACKAGES -->
 <section id="packages" class="packages section">
@@ -360,6 +458,7 @@
     </div>
   </div>
 </section>
+<div class="section-divider"></div>
 
 <!-- TESTIMONIALS -->
 <section id="testimonials" class="testimonials section">
@@ -371,6 +470,7 @@
     </div>
   </div>
 </section>
+<div class="section-divider"></div>
 
 <!-- CONTACT -->
 <section id="contact" class="contact section">
@@ -379,7 +479,7 @@
       <h2 class="section-title">Get in Touch</h2>
       <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Address<br>154 Cradock Ave<br>Lyttelton Manor, Centurion, 0157</div>
       <div class="contact-item"><i class="fas fa-phone"></i> Phone<br><a href="tel:+27638154354">+27 638 154 354</a></div>
-      <div class="contact-item"><i class="fas fa-envelope"></i> Email<br><a href="mailto:info@Iba Beauty Spa.com">info@Iba Beauty Spa.com</a></div>
+      <div class="contact-item"><i class="fas fa-envelope"></i> Email<br><a href="mailto:info@ibabeautyspa.com">info@ibabeautyspa.com</a></div>
       <div class="contact-item"><i class="fas fa-clock"></i> Hours<br>Mon–Sat: 9 AM – 8 PM<br>Sunday: 10 AM – 6 PM</div>
     </div>
     <form class="contact-form" id="contactForm">
@@ -528,7 +628,7 @@
   const phoneInput = document.getElementById('phone');
   phoneInput?.addEventListener('input', function(e) {
     this.value = this.value.replace(/[^0-9]/g, '');
-  });
+   });
 
   // === CURRENCY CONVERTER - sync desktop & mobile ===
   const rates = { ZAR: 1, USD: 0.054, EUR: 0.049, GBP: 0.042 };

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Allow all crawlers to access everything (it's a small single-page site)
+
+Sitemap: https://www.ibabeautyspa.com/sitemap.xml
