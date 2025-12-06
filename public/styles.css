@@ -852,3 +852,10 @@ header {
 #phone:valid {
   border-color: #27ae60;
 }
+.price {
+  white-space: nowrap;     /* Forces everything on one line */
+  display: flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  gap: 2px;
+}

@@ -389,6 +389,7 @@
 <div class="section-divider"></div>
 
 <!-- FEATURED PACKAGES -->
+<!-- FEATURED PACKAGES -->
 <section id="packages" class="packages section">
   <div class="container">
     <h2 class="section-title">Featured Packages</h2>
@@ -401,8 +402,7 @@
         <p class="package-subtitle">Basic Package Service</p>
         <div class="price">
           <span class="currency-symbol">R</span>
-          <span class="big" data-price="99.99">99</span>
-          <sup>99</sup>
+          <span class="big" data-price="99.99">99</span><sup>99</sup>
           <span class="per">/session</span>
         </div>
         <ul class="features">
@@ -422,8 +422,7 @@
         <p class="package-subtitle">Premium Package Service</p>
         <div class="price">
           <span class="currency-symbol">R</span>
-          <span class="big" data-price="199.99">199</span>
-          <sup>99</sup>
+          <span class="big" data-price="199.99">199</span><sup>99</sup>
           <span class="per">/session</span>
         </div>
         <ul class="features">
@@ -442,8 +441,7 @@
         <p class="package-subtitle">Luxury Package Service</p>
         <div class="price">
           <span class="currency-symbol">R</span>
-          <span class="big" data-price="399.99">399</span>
-          <sup>99</sup>
+          <span class="big" data-price="399.99">399</span><sup>99</sup>
           <span class="per">/session</span>
         </div>
         <ul class="features">
@@ -474,255 +472,183 @@
 
 <!-- CONTACT -->
 <section id="contact" class="contact section">
-  <div class="container">
-    <div class="contact-info">
-      <h2 class="section-title">Get in Touch</h2>
-      <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Address<br>154 Cradock Ave<br>Lyttelton Manor, Centurion, 0157</div>
-      <div class="contact-item"><i class="fas fa-phone"></i> Phone<br><a href="tel:+27638154354">+27 638 154 354</a></div>
-      <div class="contact-item"><i class="fas fa-envelope"></i> Email<br><a href="mailto:info@ibabeautyspa.com">info@ibabeautyspa.com</a></div>
-      <div class="contact-item"><i class="fas fa-clock"></i> Hours<br>Mon–Sat: 9 AM – 8 PM<br>Sunday: 10 AM – 6 PM</div>
+    <div class="container">
+      <div class="contact-info">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Address<br>103 Cantonments Rood<br>Lyttelton,Centurion,0157</div>
+        <div class="contact-item"><i class="fas fa-phone"></i> Phone<br><a href="tel:+27638154354">+27 638 154 354</a></div>
+        <div class="contact-item"><i class="fas fa-envelope"></i> Email<br><a href="mailto:info@ibabeautyspa.com">info@ibabeautyspa.com</a></div>
+        <div class="contact-item"><i class="fas fa-clock"></i> Hours<br>Mon–Sat: 9 AM – 8 PM<br>Sunday: 10 AM – 6 PM</div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" inputmode="numeric" pattern="[0-9]+" placeholder="e.g. 0638154354" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Service Interested In</label>
+          <select id="service" name="service" aria-label="Choose a service">
+            <option value="">Please select a service</option>
+            <option value="facial">Signature Facial</option>
+            <option value="mani-pedi">Manicure & Pedicure</option>
+            <option value="massage">Body Massage</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us about your needs..." rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
     </div>
-    <form class="contact-form" id="contactForm">
-      <div class="form-group">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input 
-          type="tel" 
-          id="phone" 
-          name="phone" 
-          inputmode="numeric" 
-          pattern="[0-9]+" 
-          placeholder="e.g. 0638154354" 
-          required
-        >
-      </div>
-      <div class="form-group">
-        <label for="service">Service Interested In</label>
-        <select id="service" name="service">
-          <option>Signature Facial</option>
-          <option>Manicure & Pedicure</option>
-          <option>Body Massage</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Tell us about your needs..." rows="4"></textarea>
-      </div>
-      <button type="submit" class="btn primary">Send Message</button>
-    </form>
-  </div>
-</section>
+  </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="container footer-container">
-    <div class="footer-col">
-      <div class="footer-logo">Iba Beauty Spa</div>
-      <p class="footer-text">Your sanctuary for luxury nail care and wellness. Experience serenity, elegance, and flawless beauty.</p>
-      <div class="social-links">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <div class="container footer-container">
+      <div class="footer-col">
+        <div class="footer-logo">Iba Beauty Spa</div>
+        <p class="footer-text">Your sanctuary for luxury nail care and wellness. Experience serenity, elegance, and flawless beauty.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#contact">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Manicure</a></li>
+          <li><a href="#">Pedicure</a></li>
+          <li><a href="#">Nail Art</a></li>
+          <li><a href="#">Gel & Acrylic</a></li>
+          <li><a href="#">Lash & Brow</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="contact-item"><i class="fas fa-map-marker-alt"></i> 154 Cradock Ave<br>Lyttelton Manor, Centurion, 0157</div>
+        <div class="contact-item"><i class="fas fa-phone"></i> <a href="tel:+27638154354">+27 638 154 354</a></div>
+        <div class="contact-item"><i class="fas fa-envelope"></i> <a href="mailto:info@ibabeautyspa.com">info@ibabeautyspa.com</a></div>
       </div>
     </div>
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#packages">Packages</a></li>
-        <li><a href="#contact">Book Now</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Services</h4>
-      <ul>
-        <li><a href="#">Manicure</a></li>
-        <li><a href="#">Pedicure</a></li>
-        <li><a href="#">Nail Art</a></li>
-        <li><a href="#">Gel & Acrylic</a></li>
-        <li><a href="#">Lash & Brow</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact Us</h4>
-      <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>154 Cradock Ave<br>Lyttelton Manor, Centurion, 0157</span>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-phone"></i>
-        <a href="tel:+27638154354">+27 638 154 354</a>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:info@Iba Beauty Spa.com">info@Iba Beauty Spa.com</a>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 <strong>Iba Beauty Spa</strong>. All rights reserved. | Designed by <a href="https://nhx.co.za" target="_blank" rel="noopener noreferrer">www.nhx.co.za</a></p>
       </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container">
-      <p>© 2025 <strong>Iba Beauty Spa</strong>. All rights reserved. | Designed by <a href="https://nhx.co.za" target="_blank">www.nhx.co.za</a></p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<!-- ALL SCRIPTS -->
-<script>
-  // === MOBILE MENU ===
-  document.getElementById('menuToggle').addEventListener('click', function() {
-    document.getElementById('mobileNav').classList.toggle('active');
-  });
-
-  document.querySelectorAll('.mobile-nav a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.getElementById('mobileNav').classList.remove('active');
+  <script>
+    // === ALL YOUR ORIGINAL JAVASCRIPT (unchanged) ===
+    document.getElementById('menuToggle').addEventListener('click', function() {
+      document.getElementById('mobileNav').classList.toggle('active');
     });
-  });
-
-  // === SMOOTH SCROLL ===
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', ev => {
-      const href = a.getAttribute('href');
-      if (href !== '#' && href.length > 1) {
-        ev.preventDefault();
-        const target = document.querySelector(href);
-        if (target) target.scrollIntoView({ behavior: 'smooth' });
-      }
+    document.querySelectorAll('.mobile-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('mobileNav').classList.remove('active');
+      });
     });
-  });
-
-  // === SWIPER ===
-  if (typeof Swiper !== 'undefined') {
-    new Swiper('.hero-swiper', {
-      loop: true,
-      effect: 'fade',
-      fadeEffect: { crossFade: true },
-      autoplay: { delay: 4000, disableOnInteraction: false },
-      pagination: { el: '.swiper-pagination', clickable: true },
-      speed: 1000,
-    });
-  }
-
-  // === CONTACT FORM ===
-  const contactForm = document.getElementById('contactForm');
-  contactForm?.addEventListener('submit', e => {
-    e.preventDefault();
-    alert('Thank you! Your booking request has been sent (demo).');
-    e.target.reset();
-  });
-
-  // === PHONE NUMBER: ONLY DIGITS ===
-  const phoneInput = document.getElementById('phone');
-  phoneInput?.addEventListener('input', function(e) {
-    this.value = this.value.replace(/[^0-9]/g, '');
-   });
-
-  // === CURRENCY CONVERTER - sync desktop & mobile ===
-  const rates = { ZAR: 1, USD: 0.054, EUR: 0.049, GBP: 0.042 };
-  const symbols = { ZAR: 'R', USD: '$', EUR: 'EUR', GBP: 'GBP' };
-
-  const desktopSelect = document.getElementById('currencySelect');
-  const mobileSelect = document.getElementById('currencySelectMobile');
-
-  const saved = localStorage.getItem('spaCurrency') || 'ZAR';
-  desktopSelect.value = saved;
-  if (mobileSelect) mobileSelect.value = saved;
-  convertAll(saved);
-
-  desktopSelect.addEventListener('change', e => syncCurrency(e.target.value));
-  if (mobileSelect) mobileSelect.addEventListener('change', e => syncCurrency(e.target.value));
-
-  function syncCurrency(cur) {
-    desktopSelect.value = cur;
-    if (mobileSelect) mobileSelect.value = cur;
-    localStorage.setItem('spaCurrency', cur);
-    convertAll(cur);
-  }
-
-  function convertAll(toCur) {
-    const rate = rates[toCur];
-    const sym = symbols[toCur];
-
-    document.querySelectorAll('[data-price]').forEach(el => {
-      const zar = parseFloat(el.dataset.price);
-      const conv = (zar * rate).toFixed(2);
-      const [int, dec] = conv.split('.');
-      el.textContent = int;
-      const sup = el.nextElementSibling;
-      if (sup && sup.tagName === 'SUP') sup.textContent = dec;
-      const symEl = el.parentElement.querySelector('.currency-symbol');
-      if (symEl) symEl.textContent = sym;
-    });
-  }
-
-  // === SCROLL FADE-IN ===
-  document.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', ev => {
+        const href = a.getAttribute('href');
+        if (href !== '#' && href.length > 1) {
+          ev.preventDefault();
+          const target = document.querySelector(href);
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
         }
       });
-    }, { threshold: 0.2 });
-    document.querySelectorAll('.about-cta').forEach(el => observer.observe(el));
-  });
-
-  // === LIGHTBOX GALLERY ===
-  document.addEventListener('DOMContentLoaded', () => {
-    const lightbox = document.createElement('div');
-    lightbox.className = 'lightbox';
-    lightbox.innerHTML = `
-      <span class="close">×</span>
-      <img src="" alt="">
-      <div class="caption"></div>
-    `;
-    document.body.appendChild(lightbox);
-
-    const lbImg = lightbox.querySelector('img');
-    const lbCaption = lightbox.querySelector('.caption');
-    const lbClose = lightbox.querySelector('.close');
-
-    document.querySelectorAll('[data-lightbox]').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        lbImg.src = link.getAttribute('href');
-        lbCaption.textContent = link.getAttribute('data-title') || '';
-        lightbox.classList.add('active');
+    });
+    if (typeof Swiper !== 'undefined') {
+      new Swiper('.hero-swiper', {
+        loop: true, effect: 'fade', fadeEffect: { crossFade: true },
+        autoplay: { delay: 4000, disableOnInteraction: false },
+        pagination: { el: '.swiper-pagination', clickable: true }, speed: 1000,
       });
+    }
+    const contactForm = document.getElementById('contactForm');
+    contactForm?.addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you! Your booking request has been sent (demo).');
+      e.target.reset();
     });
-
-    lbClose.addEventListener('click', () => lightbox.classList.remove('active'));
-    lightbox.addEventListener('click', e => {
-      if (e.target === lightbox) lightbox.classList.remove('active');
+    const phoneInput = document.getElementById('phone');
+    phoneInput?.addEventListener('input', function(e) {
+      this.value = this.value.replace(/[^0-9]/g, '');
     });
-
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') lightbox.classList.remove('active');
+    const rates = { ZAR: 1, USD: 0.054, EUR: 0.049, GBP: 0.042 };
+    const symbols = { ZAR: 'R', USD: '$', EUR: 'EUR', GBP: 'GBP' };
+    const desktopSelect = document.getElementById('currencySelect');
+    const mobileSelect = document.getElementById('currencySelectMobile');
+    const saved = localStorage.getItem('spaCurrency') || 'ZAR';
+    desktopSelect.value = saved;
+    if (mobileSelect) mobileSelect.value = saved;
+    function convertAll(toCur) {
+      const rate = rates[toCur]; const sym = symbols[toCur];
+      document.querySelectorAll('[data-price]').forEach(el => {
+        const zar = parseFloat(el.dataset.price);
+        const conv = (zar * rate).toFixed(2);
+        const [int, dec] = conv.split('.');
+        el.textContent = int;
+        const sup = el.nextElementSibling;
+        if (sup && sup.tagName === 'SUP') sup.textContent = dec;
+        const symEl = el.parentElement.querySelector('.currency-symbol');
+        if (symEl) symEl.textContent = sym;
+      });
+    }
+    convertAll(saved);
+    desktopSelect.addEventListener('change', e => { mobileSelect && (mobileSelect.value = e.target.value); localStorage.setItem('spaCurrency', e.target.value); convertAll(e.target.value); });
+    mobileSelect && mobileSelect.addEventListener('change', e => { desktopSelect.value = e.target.value; localStorage.setItem('spaCurrency', e.target.value); convertAll(e.target.value); });
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(entries => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }); }, { threshold: 0.2 });
+      document.querySelectorAll('.about-cta').forEach(el => observer.observe(el));
+      const lightbox = document.createElement('div'); lightbox.className = 'lightbox';
+      lightbox.innerHTML = `<span class="close">×</span><img src="" alt=""><div class="caption"></div>`;
+      document.body.appendChild(lightbox);
+      const lbImg = lightbox.querySelector('img');
+      const lbCaption = lightbox.querySelector('.caption');
+      const lbClose = lightbox.querySelector('.close');
+      document.querySelectorAll('[data-lightbox]').forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          lbImg.src = link.getAttribute('href');
+          lbCaption.textContent = link.getAttribute('data-title') || '';
+          lightbox.classList.add('active');
+        });
+      });
+      lbClose.addEventListener('click', () => lightbox.classList.remove('active'));
+      lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.classList.remove('active'); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') lightbox.classList.remove('active'); });
     });
-  });
-</script>
+  </script>
 
 <!-- WhatsApp Floating Button -->
-<div class="whatsapp-float">
-  <a href="https://wa.me/27638154354?text=Hi%2C%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Iba Beauty Spa.%20Can%20you%20help%3F" 
-     target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-</div>
+div class="whatsapp-float">
+    <a href="https://wa.me/27638154354?text=Hi%2C%20I'm%20interested%20in%20booking%20an%20appointment%20at%20Iba%20Beauty%20Spa.%20Can%20you%20help%3F" 
+       target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
 
 </body>
 </html>
