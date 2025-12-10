@@ -860,3 +860,89 @@ header {
   flex-wrap: nowrap;
   gap: 2px;
 }
+
+/* ========================================
+   REAL LOGO – HEADER ONLY (Footer logo removed)
+======================================== */
+
+/* Hide the old text */
+.brand {
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Logo image styling – medium, bold, visible on all screens */
+.logo-img {
+  height: 62px;              /* Medium size – looks great on desktop */
+  width: auto;
+  max-width: 260px;
+  transition: opacity 0.3s ease;
+  display: block;
+}
+
+.logo-img:hover {
+  opacity: 0.9;
+}
+
+/* Mobile (small phones) */
+@media (max-width: 480px) {
+  .logo-img {
+    height: 52px;
+    max-width: 200px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 880px) {
+  .logo-img {
+    height: 58px;
+  }
+}
+
+/* Desktop & Large Screens – nice and prominent */
+@media (min-width: 881px) {
+  .logo-img {
+    height: 168px;            /* Slightly bigger on big screens */
+    max-width: 280px;
+  }
+}
+
+
+/* Optional: Add padding if logo feels too close to edge on ultra-wide screens */
+@media (min-width: 1400px) {
+  .nav {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* FIX 1: Prevent price wrapping on tiny screens */
+.price {
+  flex-wrap: nowrap !important;
+  gap: 4px;
+}
+
+/* FIX 2: Safer mobile menu position (accounts for browser UI) */
+@media (max-width: 880px) {
+  .mobile-nav {
+    top: 72px;  /* Was 64px — safer on mobile */
+  }
+}
+
+/* FIX 3: Smoother logo scaling (optional but looks more premium) */
+@media (min-width: 881px) and (max-width: 1200px) {
+  .logo-img {
+    height: 82px;
+  }
+}
+@media (min-width: 1201px) {
+  .logo-img {
+    height: 98px;
+  }
+}
+
+/* FIX 4: Ensure currency selector in desktop nav looks perfect */
+.currency-nav-item {
+  display: flex;
+  align-items: center;
+}
